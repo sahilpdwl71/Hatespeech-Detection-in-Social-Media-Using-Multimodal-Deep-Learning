@@ -113,10 +113,12 @@ pyngrok
 
 ### Screenshots
 
-- ![Image 3](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic3.png)
-- ![Image 3](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic4.png)
-- ![Image 2](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic2.png)
-- ![Image 1](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic1.png)
+- ![Image 3](https://github.com/sahilpdwl71/Hatespeech-Detection-in-Social-Media-Using-Multimodal-Deep-Learning/blob/main/pic6.jpg)
+- ![Image 3](https://github.com/sahilpdwl71/Hatespeech-Detection-in-Social-Media-Using-Multimodal-Deep-Learning/blob/main/pic5.jpg)
+- ![Image 2](https://github.com/sahilpdwl71/Hatespeech-Detection-in-Social-Media-Using-Multimodal-Deep-Learning/blob/main/pic3.jpg)
+- ![Image 1](https://github.com/sahilpdwl71/Hatespeech-Detection-in-Social-Media-Using-Multimodal-Deep-Learning/blob/main/pic4.jpg)
+- ![Image 1](https://github.com/sahilpdwl71/Hatespeech-Detection-in-Social-Media-Using-Multimodal-Deep-Learning/blob/main/pic2.jpg)
+- ![Image 1](https://github.com/sahilpdwl71/Hatespeech-Detection-in-Social-Media-Using-Multimodal-Deep-Learning/blob/main/pic1.jpg)
 ---
 
 
