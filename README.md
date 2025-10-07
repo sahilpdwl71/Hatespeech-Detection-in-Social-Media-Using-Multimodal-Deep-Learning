@@ -1,91 +1,119 @@
-# React.js landing page template v2
+# Explainable Hate Speech Detection in Social Media Using Multimodal Deep Learning  
 
-## <a href="https://react-landing-page-template-2021.vercel.app/"> LIVE DEMO</a>
-
-<img src="public/assets/gifs/demo.gif" width="100%" height="auto" />
-
-### Description
-
-This is a React.js/Next.js based landing page plug-n-play template, ideal for startups/companies/service providers wanting to showcase their vision in a single page sleek and modern landing page.
-
-### Features
-
-- 📱 Responsive design
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (w/ JIT mode)
-
-- 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
-
-- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
-
-- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript
-
-- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
-
-- 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
-
-Built-in feature from Next.js:
-
-- ☕ Minify HTML & CSS
-- 💨 Live reload
-- ✅ Cache busting
-
-### Make it your own
-
-#### 1. Clone repo
-
-```
-git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
-cd react-landing-page-template-2021
-yarn
-```
-
-Then, you can run locally in development mode with live reload:
-
-```
-yarn dev
-```
-
-Open <http://localhost:3000> with your favorite browser to see your project.
-
-#### 2. Add your own content
-
-1.  **Content**: change the configuration in the `src/config/index.json` file to change the content of the landing page to match your use `src/config/index.json` folder and .
-2.  **Images**: add any images/icons..etc to the `public/assets/images` folder and update their reference source in `src/config/index.json`.
-3.  **Theme**: to change the theme, update the `tailwind.config.js` file to match the theme of your branding. [Tutorial](https://tailwindcss.com/docs/configuration).
-
-#### 3. Deploy to production
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fissaafalkattan%2Freact-landing-page-template-2021)
-
-##### Deploy manually
-
-You can see the results locally in production mode with:
-
-```
-yarn build
-yarn start
-```
-
-The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
-
-You can create an optimised production build with:
-
-```
-yarn build-prod
-```
-
-### Contributions
-
-Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
-
-### License
-
-Licensed under the MIT License, Copyright © 2021
-
-## Liked this template? <a href="https://www.buymeacoffee.com/issaaf">Buy me a coffee ☕️</a>
+> MSc Data Science Dissertation Project (University of Leicester, 2025) developed by: Nikhil Ayyappan Nair, Abhishek Kumar Pal, Sahil Dinesh Padwal. [REMOVE IF NOT DESIRED]
 
 ---
 
-### Looking for v1? <a href="https://github.com/issaafalkattan/React-Landing-Page-Template">V1</a>
+## Project Description  
+
+The proliferation of social media has created unprecedented challenges in content moderation, with **hate speech posing a significant threat** to online communities. This project designs, implements, and evaluates a **multimodal system** for hate speech detection across **text and memes**.  
+
+The research adopts a **tiered methodology**:  
+- Establishing a **traditional baseline** using **SVM** (TF-IDF + char n-grams).  
+- Progressing to **deep learning** models (**BiLSTM, fine-tuned BERT**) for text.  
+- Extending to **multimodal detection** with **CLIP + OCR** for hateful memes.  
+
+Beyond accuracy, the system integrates **explainability** (SHAP, Grad-CAM) and **fairness audits** (gender counterfactual testing). The final models are deployed in a **web application** as a proof-of-concept bridging research and practice.  
+
+---
+
+## Features  
+- **Text Models**: SVM, BiLSTM, fine-tuned BERT  
+- **Image/Meme Model**: CLIP + OCR for multimodal hate detection  
+- **Fairness Audits**: Counterfactual testing for gender bias  
+- **Explainability**: SHAP (text) & Grad-CAM (images)
+- **Deployment**: Flask APIs + React Dashboard + Next.js landing site  
+
+---
+
+## Project Structure  
+
+```
+├── SafeScan-main/                # Core ML artefacts + Flask helpers
+│   └── frontend/models/          # SVM, BiLSTM, BERT, CLIP runners
+│
+├── reacty-main/                  # React Dashboard (UI + charts, uploads)
+├── nexty-main/                   # Next.js Landing Site (presentation layer)
+│
+├── Supplementary_Materials_Group_Indigo/   # Dissertation research artefacts
+│   ├── Text Models/ (SVM, BiLSTM, BERT notebooks)
+│   ├── Image Model/ (CLIP + OCR + Grad-CAM notebooks)
+│   ├── Preprocessing/ (dataset merge, cleaning)
+│   └── Fairness notebooks
+│
+├── bert-main/                    # Minimal BERT runner
+├── lstm-main/                    # Minimal LSTM runner
+├── clip-main/                    # Minimal CLIP runner
+└── HateSpeech_Detection_Final_Report_Group_Indigo.docx
+```
+
+---
+
+## Datasets  
+
+- **Text Corpus**: Merged HateXplain + Hate Speech & Offensive Tweets (~44,931 samples)  
+  - Normal: 12,896 | Offensive: 24,670 | Hate Speech: 7,365  
+- **Image Corpus**: Facebook Hateful Memes (~10,000 memes)  
+  - Binary labels: hateful / non-hateful  
+
+---
+
+## Deployment  
+
+### React Dashboard  
+```bash
+cd reacty-main
+npm install
+npm start
+```
+Runs at: [http://localhost:6000](http://localhost:6000)  
+
+### Next.js Landing Site  
+```bash
+cd nexty-main
+npm install
+npm run dev
+```
+Runs at: [http://localhost:3000](http://localhost:3000)  
+
+### Flask APIs  
+```bash
+cd bert-main
+pip install -r requirements.txt
+python appk.py
+```
+[REPEAT Similar for `lstm-main`, `clip-main`, or scripts under `SafeScan-main/frontend/models/`]
+
+---
+
+## Technologies Used
+
+### Machine Learning & NLP
+- **Python 3.9+**
+- **PyTorch** (`torch`), **Transformers** (`transformers`) for BERT
+- **TensorFlow** — BiLSTM training in notebooks
+- **SHAP** (`shap`) for explainability
+- **OpenCV** (`opencv-python`) and **Pillow** (`pillow`) for image handling
+- **Google Cloud Vision** (`google-cloud-vision`) for OCR (present)
+- **NLTK** (`nltk`) for text preprocessing
+- **Matplotlib** (`matplotlib`) for plots
+
+### Web & APIs
+- **Flask** + **Flask‑CORS** for model inference APIs
+- **React**
+- **Next.js (TypeScript)** landing site
+- **Charts**: React‑Plotly.js, ApexCharts / react‑apexcharts
+- **SEO/Meta**: react‑helmet, next‑seo
+
+### Notebooks & Experimentation
+Jupyter Notebooks
+
+### Dev & Ops
+pyngrok
+
+---
+
+### Live Demo [REMOVE IF NOT PLANNING]
+[Click here to watch the video demo on Google Drive](<ADD-YOUR-DRIVE-LINK-HERE>)  
+This short video showcases text and meme hate-speech detection (SVM, BiLSTM, BERT; CLIP + OCR), SHAP & Grad-CAM explainability, the React dashboard workflow (uploads, predictions, charts), and gender counterfactual fairness checks.
+
