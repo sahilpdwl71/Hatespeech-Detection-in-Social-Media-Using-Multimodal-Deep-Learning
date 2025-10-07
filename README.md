@@ -111,6 +111,12 @@ Jupyter Notebooks
 ### Dev & Ops
 pyngrok
 
+### Screenshots
+
+- ![Image 3](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic3.png)
+- ![Image 3](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic4.png)
+- ![Image 2](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic2.png)
+- ![Image 1](https://github.com/Gunjankadam/SocialAnalyser/blob/main/pic1.png)
 ---
 
 
