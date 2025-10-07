@@ -1,0 +1,145 @@
+/* UploadPage.css */
+
+/* Global font styling to match MainHero (assuming font-sans) */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.upload-page {
+  min-height: 100vh;
+  background: url("/public/images/bg.png") no-repeat center center/cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 450px;
+  min-height: 500px; 
+}
+
+.upload-title {
+  font-family: sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: #1a2e35;
+  margin-bottom: 1.8rem;
+}
+
+/* Keep the same box size, whether image or placeholder */
+.dropzone {
+  width: 18rem;
+  height: 25rem;
+  font-size: 20px;
+  border: 3px dashed black;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  background-color: #fff;
+}
+
+/* Force image to match dropzone size */
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ✅ Stretches/crops nicely */
+  border-radius: 0.5rem;
+}
+
+.dropzone:hover {
+  border-color: #ec4755;
+}
+
+
+
+.upload-info {
+  font-size: 0.875rem;
+  color: #1a2e35;
+}
+
+.upload-error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+/* Primary button — black border by default */
+.primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #ec4755; /* black border */
+  border-radius: 0.5rem;
+  background-color: #ec4755;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #1a2e35;
+  color: #ec4755;
+  border-color: 2px solid #ec4755; /* black border on hover */
+}
+
+.secondary-btn {
+  padding:16px 40px;
+  font-size: 18px;
+  background-color: white;
+  color: #a12c34;
+  border: 2px solid white;
+}
+
+.secondary-btn:hover {
+  background-color: #1a2e35;
+  color: #ec4755;
+  border: 2px solid #ec4755;
+   /* black border on hover */}
+
+   /* Loader Spinner */
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #ec4755;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Disabled button while loading */
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

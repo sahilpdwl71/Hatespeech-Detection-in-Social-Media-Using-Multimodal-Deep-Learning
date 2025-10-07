@@ -1,0 +1,2 @@
+Due to huge size it was loaded here:  
+![BERT Model](https://fbtvsatqimjqyxwwrksk.supabase.co/storage/v1/object/public/model/bert_model/model.safetensors)

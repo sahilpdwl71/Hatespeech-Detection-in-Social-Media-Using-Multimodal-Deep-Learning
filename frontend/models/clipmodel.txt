@@ -1,0 +1,2 @@
+Due to large size the model was loaded here
+![CLIP Model](https://fbtvsatqimjqyxwwrksk.supabase.co/storage/v1/object/public/model/bert_model/clip_mlp_epoch5.pt)
