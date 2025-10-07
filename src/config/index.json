@@ -1,0 +1,109 @@
+{
+  "company": {
+    "name": "SafeScan - Detection Tool",
+    "logo": "/assets/images/logoo.png"
+  },
+  "navigation": [
+    {
+      "name": "Information",
+      "href": "product"
+    },
+    {
+      "name": "Features",
+      "href": "features"
+    },
+    {
+      "name": "About",
+      "href": "about"
+    }
+  ],
+  "callToAction": {
+    "text": "Get started",
+    "href": "http://localhost:5000/getstarted"
+  },
+  "mainHero": {
+    "title": "SafeScan -",
+    "subtitle": "Detection Tool.",
+    "description": "Enter text, upload an image, to instantly detect hateful or non-hateful content. SafeScan uses advanced various models to analyze text and visuals, identifying toxic, biased, or harmful language in seconds. Get fast, reliable, and accurate results — helping keep conversations safe and respectful. Simple, secure, and easy to use — start scanning now.",
+    "img": "/assets/images/bro3.png",
+    "primaryAction": {
+      "text": "Get started",
+      "href": ""
+    },
+    "secondaryAction": {
+      "text": "Contact us",
+      "href": "mailto:sahilpdwl71@gmail.com?subject=I would like to collaborate!"
+    }
+  },
+  "product": {
+    "title": "Let's know about Hateful Content!",
+    "items": [
+      {
+        "title": "What is Hateful Content?",
+        "description": "Hateful content involves text or images showing hostility, discrimination, or violence toward individuals or groups based on traits like race, religion, gender, or ethnicity. It often uses slurs or threats to insult or intimidate, making its detection essential for safe and respectful online spaces.",
+        "img": "/assets/images/bro4.png"
+      },
+      {
+        "title": "Causes and Importance of Detection",
+        "description": "Hateful content can be caused by various factors, including societal norms, individual beliefs, and online anonymity. Early detection and intervention are crucial to prevent the spread of hate and protect vulnerable communities.",
+        "img": "/assets/images/bro5.png"
+      }
+    ]
+  },
+  "features": {
+    "title": " ",
+    "subtitle": "Key Features!",
+    "description": "Our SafeScan platform is built to deliver fast and reliable detection of hateful or toxic content, ensuring a smooth user experience. With multimodal scanning, an easy-to-use interface, and a focus on safe and respectful online surfing, it helps maintain a cleaner digital space.",
+    "items": [
+      {
+        "name": "Multimodal Detection",
+        "description": "Analyzes both text and images (including images with embedded text) to accurately identify hateful or non-hateful content.",
+        "icon": "/assets/images/icon1.png"
+      },
+      {
+        "name": "User-Friendly Interface",
+        "description": "Designed with a simple, intuitive interface that makes content scanning easy for everyone.",
+        "icon": "/assets/images/icon2.png"
+      },
+      {
+        "name": "Intelligent Detection",
+        "description": "Powered by various models, it accurately identifies hate speech, bias, and toxic expressions with minimal false results.",
+        "icon": "/assets/images/icon3.png"
+      },
+      {
+        "name": "Context-Aware Analysis",
+        "description": "Understands the context of words and images, by distinguishing sarcasm, jokes, or neutral statements from actual hate speech.",
+        "icon": "/assets/images/icon4.png"
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/sahilpdwl71",
+      "instagram": "https://www.instagram.com/sahil_padwal21",
+      "linkedin": "https://www.linkedin.com/in/sahil-padwal-7635271b5/"
+    }
+  }
+}
