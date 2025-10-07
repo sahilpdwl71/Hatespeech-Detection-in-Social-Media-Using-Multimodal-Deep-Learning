@@ -113,7 +113,5 @@ pyngrok
 
 ---
 
-### Live Demo [REMOVE IF NOT PLANNING]
-[Click here to watch the video demo on Google Drive](<ADD-YOUR-DRIVE-LINK-HERE>)  
-This short video showcases text and meme hate-speech detection (SVM, BiLSTM, BERT; CLIP + OCR), SHAP & Grad-CAM explainability, the React dashboard workflow (uploads, predictions, charts), and gender counterfactual fairness checks.
+
 
